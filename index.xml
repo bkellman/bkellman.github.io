@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>A Systematic Evaluation of Methods for Tailoring Genome-Scale Metabolic Models</title>
+      <link>https://bkellman.github.io/publication/tissue-specific-metabilic-modeling/</link>
+      <pubDate>Fri, 07 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bkellman.github.io/publication/tissue-specific-metabilic-modeling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Human milk oligosaccharide composition predicts risk of necrotising enterocolitis in preterm infants</title>
       <link>https://bkellman.github.io/publication/nec-hmo/</link>
       <pubDate>Fri, 07 Apr 2017 00:00:00 +0000</pubDate>
