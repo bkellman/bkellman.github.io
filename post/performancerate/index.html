@@ -52,11 +52,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="https://bkellman.github.io/post/betweensamplenormalization/">
+  <link rel="canonical" href="https://bkellman.github.io/post/performancerate/">
 
   
 
-  <title>Examining the basis for between sample normalization | Ben Kellman</title>
+  <title>Classification Performance: The rate of change of Sensitivity and Specificity | Ben Kellman</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -181,7 +181,7 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Examining the basis for between sample normalization</h1>
+    <h1 itemprop="name">Classification Performance: The rate of change of Sensitivity and Specificity</h1>
     
 
 <div class="article-metadata">
@@ -200,19 +200,16 @@
   <span class="article-tags">
     <i class="fa fa-tags"></i>
     
-    <a href="/tags/rnaseq">RNAseq</a
+    <a href="/tags/roc">ROC</a
     >, 
     
-    <a href="/tags/normalization">Normalization</a
+    <a href="/tags/auc">AUC</a
     >, 
     
-    <a href="/tags/fpkm">FPKM</a
+    <a href="/tags/sensitivity">Sensitivity</a
     >, 
     
-    <a href="/tags/bsn">BSN</a
-    >, 
-    
-    <a href="/tags/betweensamplenormalization">BetweenSampleNormalization</a
+    <a href="/tags/specificty">Specificty</a
     >
     
   </span>
@@ -225,35 +222,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fbkellman.github.io%2fpost%2fbetweensamplenormalization%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fbkellman.github.io%2fpost%2fperformancerate%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Examining%20the%20basis%20for%20between%20sample%20normalization&amp;url=https%3a%2f%2fbkellman.github.io%2fpost%2fbetweensamplenormalization%2f"
+         href="https://twitter.com/intent/tweet?text=Classification%20Performance%3a%20The%20rate%20of%20change%20of%20Sensitivity%20and%20Specificity&amp;url=https%3a%2f%2fbkellman.github.io%2fpost%2fperformancerate%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fbkellman.github.io%2fpost%2fbetweensamplenormalization%2f&amp;title=Examining%20the%20basis%20for%20between%20sample%20normalization"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fbkellman.github.io%2fpost%2fperformancerate%2f&amp;title=Classification%20Performance%3a%20The%20rate%20of%20change%20of%20Sensitivity%20and%20Specificity"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fbkellman.github.io%2fpost%2fbetweensamplenormalization%2f&amp;title=Examining%20the%20basis%20for%20between%20sample%20normalization"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fbkellman.github.io%2fpost%2fperformancerate%2f&amp;title=Classification%20Performance%3a%20The%20rate%20of%20change%20of%20Sensitivity%20and%20Specificity"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Examining%20the%20basis%20for%20between%20sample%20normalization&amp;body=https%3a%2f%2fbkellman.github.io%2fpost%2fbetweensamplenormalization%2f">
+         href="mailto:?subject=Classification%20Performance%3a%20The%20rate%20of%20change%20of%20Sensitivity%20and%20Specificity&amp;body=https%3a%2f%2fbkellman.github.io%2fpost%2fperformancerate%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -268,98 +265,121 @@
     <div class="article-style" itemprop="articleBody">
       
 
-<h2 id="opinion-currently-under-review-as-of-8-7-2016"><em>opinion currently under-review (as of 8/7/2016)</em></h2>
+<h2 id="opinion-currently-under-construction-as-of-8-15-2016"><em>opinion currently under-construction (as of 8/15/2016)</em></h2>
 
-<p>A friend pointed out to me recently that I should not be using FPKM for between sample comparisons and sent me <a href="https://haroldpimentel.wordpress.com/2014/12/08/in-rna-seq-2-2-between-sample-normalization/" target="_blank"><em>this blog post</em></a>.</p>
+<table>
+<thead>
+<tr>
+<th>Confusion Matrix</th>
+<th>Disease</th>
+<th>No Disease</th>
+</tr>
+</thead>
 
-<h1 id="the-example-that-caught-my-attention">The example that caught my attention</h1>
+<tbody>
+<tr>
+<td>Test +</td>
+<td>True Positive (TP)</td>
+<td>False Positive (FP)</td>
+</tr>
 
-<p>The example in the blogpost sparked my interest. This prompted me to play a bit with the numbers and examine the robustness of library-size normalization given various challenges.</p>
+<tr>
+<td>Test -</td>
+<td>False Negative (FN)</td>
+<td>True Negative (TN)</td>
+</tr>
+</tbody>
+</table>
 
-<p>As illustrated in the blogpost, library normalized counts breaks down at 5 genes when 1 has a 20-fold increase in differential expression. That breakdown is indicated by the differential expression induced in all the other, stabely expressed, genes. For any stably expressed gene, we would expect the differential expression between the control and experimental condition to be nominal: $E[FC_{stable}]=1$. We can denote library normalized counts for gene $i$ in the control condition as $C_i$ and library normalized counts for gene $i$ in the experimental condition as $C_i&rsquo;$. Counts for stable, $s$, genes will be expected to remain constant across conditions: $E[FC_s] = C_s&rsquo;/C_s = 1$. While counts for differentially expressed (&ldquo;funky&rdquo;) genes will expect to diverge across conditions: $E[FC_f]= C_f&rsquo;/C_f \not= 1$. Let&rsquo;s begin with the assumption that $E[FC_s] = 1$.</p>
+<p>Recognition of &ldquo;only&rdquo; cases $$ Specificty = TN/N = TN/(TN+FP) $$
+Recognition of &ldquo;all&rdquo; cases $$ Sensitivity = TP/P = TP/(TP+FN) $$</p>
 
-<p>$$E[FC_s] =  C_s&rsquo;/C_s = 1$$</p>
+<p>We can describe two normal distributions we would like to distish as $\mathcal{N}(\mu_0,\sigma_0^2)$ and $\mathcal{N}(\mu_1,\sigma_1^2)$. For a threshold, $t$,</p>
 
-<p>We know that given raw counts, $R$, and a library of counts from $G$ genes,
-$$C_s =  \frac{\text{stable gene $i$ counts}}{ \text{total counts}} = \frac{R_s}{ \sum_G R_i}$$</p>
+<table>
+<thead>
+<tr>
+<th>Confusion Matrix</th>
+<th>Disease</th>
+<th>No Disease</th>
+</tr>
+</thead>
 
-<p>We can now ask if $E[FC_s] = C_s&rsquo;/C_s = 1$ as expected in the given example in the blogpost.</p>
+<tbody>
+<tr>
+<td>Test +</td>
+<td>$ TP = Pr( X &gt; t | 1 ) $</td>
+<td>$ FP = Pr( X &gt; t | 0 ) $</td>
+</tr>
 
-<p>$$ FC_s = \frac{C_s&rsquo;}{C_s} = \frac{ \frac{R_s&rsquo;}{ \sum_G R_i&rsquo;}} {\frac{R_s}{ \sum_G R_i} } =
-\frac{ \frac{2}{ 10}} {\frac{6}{100} } = 3.\overline{3} \not=1
- $$</p>
+<tr>
+<td>Test -</td>
+<td>$ FN = Pr( X &lt; t | 1 ) $</td>
+<td>$ TN = Pr( X &lt; t | 0 ) $</td>
+</tr>
+</tbody>
+</table>
 
-<p>Clearly, in the given example, $FC_s\not=1$, indicating that the stable genes are erroneously differentially expressed. It is at this point, I noted some curious properties of this example including: <strong>(1)</strong> the extreme of the average fold-change of the differentially expressed gene ($\bar{FC_f}=20$), <strong>(2)</strong> the 10-fold difference in library size, and <strong>(3)</strong> that 25% of the genes were differentially expressed. <strong>Of course, this was just an example, but I was curious, which if any of these factors were important to the performance of library-size normalization.</strong></p>
+<p>Let&rsquo;s expand $TP$ with the cumulative distribution function (CDF,$\Phi$):</p>
 
-<hr />
+<p>$$TP = Pr(X&gt;t|1) = 1-\Phi(z) = 1-\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{z} e^{\frac{-t^2}{2}} dt $$</p>
 
-<h2 id="a-little-generalization-to-get-us-going">A little generalization to get us going</h2>
+<p>$$TP  = 1-\Phi \left(\frac{t-\mu_1}{\sigma_1}\right) $$</p>
 
-<p>Total counts, $\sum_G R_i$, can be expanded to seperate differentially expressed, $F$, and stable, $S$, genes by multiplying the expected counts by the number of differentially expressed and stable genes, $G_f$ and $G_s$ respectively.</p>
+<p>$$TP =  1-\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{ \left(\frac{t-\mu_1}{\sigma_1}\right) } e^{\frac{-t^2}{2}} dt $$</p>
 
-<p>$$C_s = \frac{R_s}{ \sum_G R_i} = \frac{R_s}{ E[R_s]G_s + E[R_f]G_f}$$</p>
+<table>
+<thead>
+<tr>
+<th>Confusion Matrix</th>
+<th>Disease</th>
+<th>No Disease</th>
+</tr>
+</thead>
 
-<p>**This generalization allows us to expand and reorganize our understanding of influences over the expected fold change for stable genes, $E[FC_s]$.$$ We can rewrite $E[FC_s]$ in terms of raw counts and gene number:</p>
+<tbody>
+<tr>
+<td>Test +</td>
+<td>$ 1-\Phi \left(\frac{t-\mu_1}{\sigma_1}\right) $</td>
+<td>$ 1-\Phi \left(\frac{t-\mu_0}{\sigma_0}\right) $</td>
+</tr>
 
-<p>$$E[FC_s] = C_s&rsquo;/C_s = 1$$
-$$E[FC_s] = \frac{\frac{R_s&rsquo;}{ \sum_G R_i&rsquo;}}{\frac{R_s}{ \sum_G R_i}} =
-\frac{R_s&rsquo;/ (E[R_s&rsquo;]G_s + E[R_f&rsquo;]G_f)}{R_s/ (E[R_s]G_s + E[R_f]G_f)} = 1$$</p>
+<tr>
+<td>Test -</td>
+<td>$ \Phi \left(\frac{t-\mu_1}{\sigma_1}\right) $</td>
+<td>$ \Phi \left(\frac{t-\mu_0}{\sigma_0}\right) $</td>
+</tr>
+</tbody>
+</table>
 
-<p><strong>In the control condition we can assume that $E[R_s]=E[R_f]$.</strong> This may sound odd but in the control condition, the cell has not been aggitated in any mannor that would distinguish stable genes for the genes that will be differentially expressed. Therefore, the genes that will be differentially expressed should be indistinguishable from those that wont be differetially expressed. Therefore:</p>
+<h2 id="now-we-can-re-write-sensitivity-and-specificity-in-terms-of-cdf-with-respect-to-the-threshold">Now we can re-write Sensitivity and Specificity in terms of CDF with respect to the threshold</h2>
 
-<p>$$E[FC_s] = \frac{R_s&rsquo;/ (E[R_s&rsquo;]G_s + E[R_f&rsquo;]G_f)}{R_s/ (E[R_s]G_s + E[R_f]G_f)} $$
-$$ = \frac{R_s&rsquo;/ (E[R_s&rsquo;]G_s + E[R_f&rsquo;]G_f)}{R_s/ (E[R_s]G_s + E[R_s]G_f)} $$
-$$ = \frac{R_s&rsquo;/ (E[R_s&rsquo;]G_s + E[R_f&rsquo;]G_f)}{1/ (G_s + G_f)} $$
-$$ = \frac{R_s&rsquo;(G_s + G_f)}{ (E[R_s&rsquo;]G_s + E[R_f&rsquo;]G_f)} $$</p>
+<p>Recognition of &ldquo;only&rdquo; cases
+$$ Specificty = TN/N = TN/(TN+FP) $$</p>
 
-<p>We can further generalize the expected expression of the differentially expressed genes, $E[R_f&rsquo;]$, by describing them as a scaling on the base expression, $E[F_f]$. Since the base expression is a raw measurement in a different sized library, this is not an ideal comparison. We recall from earlier that $E[R_s]=E[R_f]$ in the unperturbed condition. **To further this generalization, we extend the equation $E[R_s]=E[R_f]$ to account for divergence by some fold-change, $f$, from the average base expression in the experimental condition:
-$$ E[R_f&rsquo;] = f(E[R_s&rsquo;]) $$</p>
+<p>$$ = \frac{\Phi \left(\frac{t-\mu_0}{\sigma_0}\right)}{\Phi \left(\frac{t-\mu_0}{\sigma_0}\right) + \left(1-\Phi \left(\frac{t-\mu_1}{\sigma_1}\right)\right)} $$</p>
 
-<p>This equation allows us to further simplify our expression for $E[FC_s]$:
-$$E[FC_s] = \frac{R_s&rsquo;(G_s + G_f)}{ (E[R_s&rsquo;]G_s + E[R_f&rsquo;]G_f)} $$
-$$E[FC_s] = \frac{R_s&rsquo;(G_s + G_f)}{ (E[R_s&rsquo;]G_s + f(E[R_s&rsquo;])G_f)} $$
-$$E[FC_s] = \frac{(G_s + G_f)}{ (G_s + fG_f)} $$</p>
+<h1 id="measures">Measures</h1>
 
-<p>$E[FC_s]$ is now in a more maliable form and we can begin to make some hypotheses reguarding when library-size normalization may fail.</p>
+<h2 id="intersection-of-sensitivity-and-specificity">Intersection of Sensitivity and Specificity</h2>
 
-<h1 id="stuff-i-think">Stuff I think:</h1>
+<blockquote>
+<p>maximum for both</p>
+</blockquote>
 
-<h2 id="1-influence-of-average-fold-change-of-differentially-expressed-genes">(1) Influence of average fold-change of differentially expressed genes</h2>
+<h2 id="d-sensitivity-dt-0-and-d-specificity-dt-0">d(Sensitivity)/dt=0 and d(Specificity)/dt=0</h2>
 
-<ul>
-<li>$E[FC_s]$ is inversely proportional to $f$.</li>
-<li>But $E[f]=0$ [cite or explain]. therefore, in a well designed typical experiment there is no influence</li>
-</ul>
+<blockquote>
+<p>maximum for each</p>
+</blockquote>
 
-<p>$$E[FC_s] = \frac{(G_s + G_f)}{ (G_s + fG_f)} $$
-$$ = \frac{(G_s + G_f)}{ (G_s + (1)G_f)} $$
-$$ = \frac{(G_s + G_f)}{ (G_s + G_f)} = 1 $$</p>
+<h2 id="difference-between-the-intersection-and-derivatives">Difference between the intersection and derivatives</h2>
 
-<h2 id="2-influence-of-average-library-size-difference">(2) Influence of average library-size difference</h2>
+<blockquote>
+<p>difference in each maximum is the global performance</p>
+</blockquote>
 
-<ul>
-<li>No terms indicating the library size survive to this description of the E[FC_s] therefore, following the assumptions noted above, we expect no influence of library-size on E[FC_s] in library-size normalized samples.</li>
-</ul>
-
-<h2 id="3-influence-of-the-proportion-of-differentially-expressed-genes">(3) Influence of the proportion of differentially expressed genes</h2>
-
-<ul>
-<li>The potential influence of $f$ noted in section (1), is scaled by the magnitude of $G_f$. When $G_f$ is small relative to $G_s$, the potential influcence of a non-zero $f$ will be mitigated.</li>
-<li>It is typically the case that $G_f&lt;&lt;G_s$ since, typically, the cell is not completely transformed. In a carefully controlled experiment when only a portion of a response network is differentially expressed, truly differentially expressed genes can be on the order of 10. While interfering with global regulators like p300 could result in thousands of differentially expressed genes.</li>
-<li>In an experiment where $E[f]\not=0$, it is important that $G_f&lt;&lt;G_s$, otherwise they will compound to induce differential expression in stable genes.</li>
-</ul>
-
-<h1 id="conclusion">Conclusion</h1>
-
-<p>If $E[f]\not=0$ and the number of differentially expressed gens is not small, library-size normalization is not reliable and will induce differential expression in stable genes.</p>
-
-<hr />
-
-<h2 id="concerns">Concerns</h2>
-
-<ul>
-<li>Is $x/E[x] = 1$? If I&rsquo;m looking at E[FC] should I be using R or E[R] in the numerator?</li>
-</ul>
+<h2 id="generative-auc-integral-of-fpr-tpr">Generative AUC (integral of FPR &amp; TPR)</h2>
 
     </div>
   </div>
@@ -370,10 +390,10 @@ $$ = \frac{(G_s + G_f)}{ (G_s + G_f)} = 1 $$</p>
   <nav>
   <ul class="pager">
     
-
+    <li class="previous"><a href="https://bkellman.github.io/post/betweensamplenormalization/"><span
+      aria-hidden="true">&larr;</span> Examining the basis for between sample normalization</a></li>
     
-    <li class="next"><a href="https://bkellman.github.io/post/performancerate/">Classification Performance: The rate of change of Sensitivity and Specificity <span
-      aria-hidden="true">&rarr;</span></a></li>
+
     
   </ul>
 </nav>

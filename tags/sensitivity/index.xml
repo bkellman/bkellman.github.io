@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sensitivity on Ben Kellman</title>
+    <link>https://bkellman.github.io/tags/sensitivity/</link>
+    <description>Recent content in Sensitivity on Ben Kellman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Ben Kellman</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 12:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/sensitivity/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Classification Performance: The rate of change of Sensitivity and Specificity</title>
+      <link>https://bkellman.github.io/post/performancerate/</link>
+      <pubDate>Wed, 20 Apr 2016 12:00:00 +0000</pubDate>
+      
+      <guid>https://bkellman.github.io/post/performancerate/</guid>
+      <description>
+
+&lt;h2 id=&#34;opinion-currently-under-construction-as-of-8-15-2016&#34;&gt;&lt;em&gt;opinion currently under-construction (as of 8/15/2016)&lt;/em&gt;&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Confusion Matrix&lt;/th&gt;
+&lt;th&gt;Disease&lt;/th&gt;
+&lt;th&gt;No Disease&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Test +&lt;/td&gt;
+&lt;td&gt;True Positive (TP)&lt;/td&gt;
+&lt;td&gt;False Positive (FP)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Test -&lt;/td&gt;
+&lt;td&gt;False Negative (FN)&lt;/td&gt;
+&lt;td&gt;True Negative (TN)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Recognition of &amp;ldquo;only&amp;rdquo; cases $$ Specificty = TN/N = TN/(TN+FP) $$
+Recognition of &amp;ldquo;all&amp;rdquo; cases $$ Sensitivity = TP/P = TP/(TP+FN) $$&lt;/p&gt;
+
+&lt;p&gt;We can describe two normal distributions we would like to distish as $\mathcal{N}(\mu_0,\sigma_0^2)$ and $\mathcal{N}(\mu_1,\sigma_1^2)$. For a threshold, $t$,&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Confusion Matrix&lt;/th&gt;
+&lt;th&gt;Disease&lt;/th&gt;
+&lt;th&gt;No Disease&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Test +&lt;/td&gt;
+&lt;td&gt;$ TP = Pr( X &amp;gt; t | 1 ) $&lt;/td&gt;
+&lt;td&gt;$ FP = Pr( X &amp;gt; t | 0 ) $&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Test -&lt;/td&gt;
+&lt;td&gt;$ FN = Pr( X &amp;lt; t | 1 ) $&lt;/td&gt;
+&lt;td&gt;$ TN = Pr( X &amp;lt; t | 0 ) $&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Let&amp;rsquo;s expand $TP$ with the cumulative distribution function (CDF,$\Phi$):&lt;/p&gt;
+
+&lt;p&gt;$$TP = Pr(X&amp;gt;t|1) = 1-\Phi(z) = 1-\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{z} e^{\frac{-t^2}{2}} dt $$&lt;/p&gt;
+
+&lt;p&gt;$$TP  = 1-\Phi \left(\frac{t-\mu_1}{\sigma_1}\right) $$&lt;/p&gt;
+
+&lt;p&gt;$$TP =  1-\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{ \left(\frac{t-\mu_1}{\sigma_1}\right) } e^{\frac{-t^2}{2}} dt $$&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Confusion Matrix&lt;/th&gt;
+&lt;th&gt;Disease&lt;/th&gt;
+&lt;th&gt;No Disease&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Test +&lt;/td&gt;
+&lt;td&gt;$ 1-\Phi \left(\frac{t-\mu_1}{\sigma_1}\right) $&lt;/td&gt;
+&lt;td&gt;$ 1-\Phi \left(\frac{t-\mu_0}{\sigma_0}\right) $&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Test -&lt;/td&gt;
+&lt;td&gt;$ \Phi \left(\frac{t-\mu_1}{\sigma_1}\right) $&lt;/td&gt;
+&lt;td&gt;$ \Phi \left(\frac{t-\mu_0}{\sigma_0}\right) $&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;now-we-can-re-write-sensitivity-and-specificity-in-terms-of-cdf-with-respect-to-the-threshold&#34;&gt;Now we can re-write Sensitivity and Specificity in terms of CDF with respect to the threshold&lt;/h2&gt;
+
+&lt;p&gt;Recognition of &amp;ldquo;only&amp;rdquo; cases
+$$ Specificty = TN/N = TN/(TN+FP) $$&lt;/p&gt;
+
+&lt;p&gt;$$ = \frac{\Phi \left(\frac{t-\mu_0}{\sigma_0}\right)}{\Phi \left(\frac{t-\mu_0}{\sigma_0}\right) + \left(1-\Phi \left(\frac{t-\mu_1}{\sigma_1}\right)\right)} $$&lt;/p&gt;
+
+&lt;h1 id=&#34;measures&#34;&gt;Measures&lt;/h1&gt;
+
+&lt;h2 id=&#34;intersection-of-sensitivity-and-specificity&#34;&gt;Intersection of Sensitivity and Specificity&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;maximum for both&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;d-sensitivity-dt-0-and-d-specificity-dt-0&#34;&gt;d(Sensitivity)/dt=0 and d(Specificity)/dt=0&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;maximum for each&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;difference-between-the-intersection-and-derivatives&#34;&gt;Difference between the intersection and derivatives&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;difference in each maximum is the global performance&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&#34;generative-auc-integral-of-fpr-tpr&#34;&gt;Generative AUC (integral of FPR &amp;amp; TPR)&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
