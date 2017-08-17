@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Ben Kellman</copyright>
-    <lastBuildDate>Wed, 20 Apr 2016 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/normalization/" rel="self" type="application/rss+xml" />
     
     <item>
@@ -19,6 +19,8 @@
       <description>
 
 &lt;h2 id=&#34;opinion-currently-under-review-as-of-8-7-2016&#34;&gt;&lt;em&gt;opinion currently under-review (as of 8/7/2016)&lt;/em&gt;&lt;/h2&gt;
+
+&lt;p&gt;Written by &lt;em&gt;Ben Kellman&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;A friend pointed out to me recently that I should not be using FPKM for between sample comparisons and sent me &lt;a href=&#34;https://haroldpimentel.wordpress.com/2014/12/08/in-rna-seq-2-2-between-sample-normalization/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;this blog post&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
 
