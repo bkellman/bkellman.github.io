@@ -11,12 +11,12 @@
     <atom:link href="/talk/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Example Talk</title>
-      <link>https://bkellman.github.io/talk/example-talk/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <title>Pediatric Diagnostics: Managing Heterogeneity with Systems Biology</title>
+      <link>https://bkellman.github.io/talk/pediatricsystemsmedicine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://bkellman.github.io/talk/example-talk/</guid>
-      <description>&lt;p&gt;Embed your slides or video here using &lt;a href=&#34;https://gcushen.github.io/hugo-academic-demo/post/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;shortcodes&lt;/a&gt;. Further details can easily be added using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+      <guid>https://bkellman.github.io/talk/pediatricsystemsmedicine/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://docs.google.com/document/d/1OIq9gKWtqZuT8GD8ZJfQ37k7SbTq7zIDr1a6E4r7Pis/edit?usp=sharing&#34; target=&#34;_blank&#34;&gt;Click here to see the full written proposal&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
