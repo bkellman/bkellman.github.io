@@ -22,10 +22,12 @@
 
 &lt;h2 id=&#34;if-you-have-something-to-add-please-shoot-me-an-email&#34;&gt;*if you have something to add, please shoot me an email!&lt;/h2&gt;
 
+&lt;h2 id=&#34;confusion-matrix&#34;&gt;Confusion matrix&lt;/h2&gt;
+
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;Confusion Matrix&lt;/th&gt;
+&lt;th&gt;_&lt;/th&gt;
 &lt;th&gt;Disease&lt;/th&gt;
 &lt;th&gt;No Disease&lt;/th&gt;
 &lt;/tr&gt;
@@ -46,10 +48,20 @@
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;Recognition of &amp;ldquo;only&amp;rdquo; cases $$ Specificty = TN/N = TN/(TN+FP) $$
+&lt;p&gt;Recognition of &amp;ldquo;only&amp;rdquo; cases $$ Specificty = 1-FPR = TN/N = TN/(TN+FP) $$
 Recognition of &amp;ldquo;all&amp;rdquo; cases $$ Sensitivity = TP/P = TP/(TP+FN) $$&lt;/p&gt;
 
-&lt;p&gt;We can describe two normal distributions we would like to distish as $\mathcal{N}(\mu_0,\sigma_0^2)$ and $\mathcal{N}(\mu_1,\sigma_1^2)$. For a threshold, $t$,&lt;/p&gt;
+&lt;h2 id=&#34;logistic-regression-and-log-odds&#34;&gt;Logistic Regression and log-odds&lt;/h2&gt;
+
+&lt;p&gt;Logistic Regression, developed in 1958 by David Cox, is a subdomain of regression modeling that parameterizes the relation between multiple independent observation variables and a binary dependent response variable. It was developed to calculate a probability of membership to either the &amp;ldquo;0&amp;rdquo; or &amp;ldquo;1&amp;rdquo; distribution.&lt;/p&gt;
+
+&lt;p&gt;The logistic regression is an adaptation of generialize linear modeling:
+$$ g(x) = \beta_0 + \beta_1 x $$
+where $g(x)$ is the logit function: $ ln \left( \frac{p}{1-p} \right) $.&lt;/p&gt;
+
+&lt;p&gt;We can describe the bimodal distribution of log-odds produced by a logistic regression  two normal distributions we would like to distish as $\mathcal{N}(\mu_0,\sigma_0^2)$ and $\mathcal{N}(\mu_1,\sigma_1^2)$. For a threshold, $t$,&lt;/p&gt;
+
+&lt;h2 id=&#34;updating-the-confusion-matrix-to-include-log-odds&#34;&gt;Updating the Confusion matrix to include log-odds&lt;/h2&gt;
 
 &lt;table&gt;
 &lt;thead&gt;
@@ -95,46 +107,29 @@ Recognition of &amp;ldquo;all&amp;rdquo; cases $$ Sensitivity = TP/P = TP/(TP+FN
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Test +&lt;/td&gt;
-&lt;td&gt;$ 1-\Phi \left(\frac{t-\mu_1}{\sigma_1}\right) $&lt;/td&gt;
-&lt;td&gt;$ 1-\Phi \left(\frac{t-\mu_0}{\sigma_0}\right) $&lt;/td&gt;
+&lt;td&gt;$ Sensitivity=1-\Phi \left(\frac{t-\mu_1}{\sigma_1}\right) $&lt;/td&gt;
+&lt;td&gt;$ FPR=1-\Phi \left(\frac{t-\mu_0}{\sigma_0}\right) $&lt;/td&gt;
 &lt;/tr&gt;
 
 &lt;tr&gt;
 &lt;td&gt;Test -&lt;/td&gt;
-&lt;td&gt;$ \Phi \left(\frac{t-\mu_1}{\sigma_1}\right) $&lt;/td&gt;
-&lt;td&gt;$ \Phi \left(\frac{t-\mu_0}{\sigma_0}\right) $&lt;/td&gt;
+&lt;td&gt;$ FNR=\Phi \left(\frac{t-\mu_1}{\sigma_1}\right) $&lt;/td&gt;
+&lt;td&gt;$ Specificity=\Phi \left(\frac{t-\mu_0}{\sigma_0}\right) $&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;h2 id=&#34;now-we-can-re-write-sensitivity-and-specificity-in-terms-of-cdf-with-respect-to-the-threshold&#34;&gt;Now we can re-write Sensitivity and Specificity in terms of CDF with respect to the threshold&lt;/h2&gt;
+&lt;h1 id=&#34;integral-and-derivative-of-the-sensitivity-specificity-product&#34;&gt;Integral and Derivative of the sensitivity specificity product&lt;/h1&gt;
 
-&lt;p&gt;Recognition of &amp;ldquo;only&amp;rdquo; cases
-$$ Specificty = TN/N = TN/(TN+FP) $$&lt;/p&gt;
+&lt;h2 id=&#34;integral-generative-auc&#34;&gt;Integral: Generative AUC&lt;/h2&gt;
 
-&lt;p&gt;$$ = \frac{\Phi \left(\frac{t-\mu_0}{\sigma_0}\right)}{\Phi \left(\frac{t-\mu_0}{\sigma_0}\right) + \left(1-\Phi \left(\frac{t-\mu_1}{\sigma_1}\right)\right)} $$&lt;/p&gt;
+&lt;p&gt;Appropriate when thresholding log-odds form a logistic regression since they are norally distributed. Calculate AUC in a close-form rather than approximating them with the trapazoial method. Trapazoids give an exact answer for the given problem but calculating them using this generative method may generalize for easily.&lt;/p&gt;
 
-&lt;h1 id=&#34;measures&#34;&gt;Measures&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;does it generalize?&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h2 id=&#34;intersection-of-sensitivity-and-specificity&#34;&gt;Intersection of Sensitivity and Specificity&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;maximum for both&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;d-sensitivity-dt-0-and-d-specificity-dt-0&#34;&gt;d(Sensitivity)/dt=0 and d(Specificity)/dt=0&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;maximum for each&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;difference-between-the-intersection-and-derivatives&#34;&gt;Difference between the intersection and derivatives&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;difference in each maximum is the global performance&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;generative-auc-integral-of-fpr-tpr&#34;&gt;Generative AUC (integral of FPR &amp;amp; TPR)&lt;/h2&gt;
+&lt;h2 id=&#34;derivative-threshold-that-maximizes-both-sensitivity-and-specificity&#34;&gt;Derivative: Threshold that maximizes both Sensitivity and Specificity&lt;/h2&gt;
 </description>
     </item>
     

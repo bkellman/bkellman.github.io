@@ -281,10 +281,12 @@
 
 <h2 id="if-you-have-something-to-add-please-shoot-me-an-email">*if you have something to add, please shoot me an email!</h2>
 
+<h2 id="confusion-matrix">Confusion matrix</h2>
+
 <table>
 <thead>
 <tr>
-<th>Confusion Matrix</th>
+<th>_</th>
 <th>Disease</th>
 <th>No Disease</th>
 </tr>
@@ -305,10 +307,20 @@
 </tbody>
 </table>
 
-<p>Recognition of &ldquo;only&rdquo; cases $$ Specificty = TN/N = TN/(TN+FP) $$
+<p>Recognition of &ldquo;only&rdquo; cases $$ Specificty = 1-FPR = TN/N = TN/(TN+FP) $$
 Recognition of &ldquo;all&rdquo; cases $$ Sensitivity = TP/P = TP/(TP+FN) $$</p>
 
-<p>We can describe two normal distributions we would like to distish as $\mathcal{N}(\mu_0,\sigma_0^2)$ and $\mathcal{N}(\mu_1,\sigma_1^2)$. For a threshold, $t$,</p>
+<h2 id="logistic-regression-and-log-odds">Logistic Regression and log-odds</h2>
+
+<p>Logistic Regression, developed in 1958 by David Cox, is a subdomain of regression modeling that parameterizes the relation between multiple independent observation variables and a binary dependent response variable. It was developed to calculate a probability of membership to either the &ldquo;0&rdquo; or &ldquo;1&rdquo; distribution.</p>
+
+<p>The logistic regression is an adaptation of generialize linear modeling:
+$$ g(x) = \beta_0 + \beta_1 x $$
+where $g(x)$ is the logit function: $ ln \left( \frac{p}{1-p} \right) $.</p>
+
+<p>We can describe the bimodal distribution of log-odds produced by a logistic regression  two normal distributions we would like to distish as $\mathcal{N}(\mu_0,\sigma_0^2)$ and $\mathcal{N}(\mu_1,\sigma_1^2)$. For a threshold, $t$,</p>
+
+<h2 id="updating-the-confusion-matrix-to-include-log-odds">Updating the Confusion matrix to include log-odds</h2>
 
 <table>
 <thead>
@@ -354,46 +366,29 @@ Recognition of &ldquo;all&rdquo; cases $$ Sensitivity = TP/P = TP/(TP+FN) $$</p>
 <tbody>
 <tr>
 <td>Test +</td>
-<td>$ 1-\Phi \left(\frac{t-\mu_1}{\sigma_1}\right) $</td>
-<td>$ 1-\Phi \left(\frac{t-\mu_0}{\sigma_0}\right) $</td>
+<td>$ Sensitivity=1-\Phi \left(\frac{t-\mu_1}{\sigma_1}\right) $</td>
+<td>$ FPR=1-\Phi \left(\frac{t-\mu_0}{\sigma_0}\right) $</td>
 </tr>
 
 <tr>
 <td>Test -</td>
-<td>$ \Phi \left(\frac{t-\mu_1}{\sigma_1}\right) $</td>
-<td>$ \Phi \left(\frac{t-\mu_0}{\sigma_0}\right) $</td>
+<td>$ FNR=\Phi \left(\frac{t-\mu_1}{\sigma_1}\right) $</td>
+<td>$ Specificity=\Phi \left(\frac{t-\mu_0}{\sigma_0}\right) $</td>
 </tr>
 </tbody>
 </table>
 
-<h2 id="now-we-can-re-write-sensitivity-and-specificity-in-terms-of-cdf-with-respect-to-the-threshold">Now we can re-write Sensitivity and Specificity in terms of CDF with respect to the threshold</h2>
+<h1 id="integral-and-derivative-of-the-sensitivity-specificity-product">Integral and Derivative of the sensitivity specificity product</h1>
 
-<p>Recognition of &ldquo;only&rdquo; cases
-$$ Specificty = TN/N = TN/(TN+FP) $$</p>
+<h2 id="integral-generative-auc">Integral: Generative AUC</h2>
 
-<p>$$ = \frac{\Phi \left(\frac{t-\mu_0}{\sigma_0}\right)}{\Phi \left(\frac{t-\mu_0}{\sigma_0}\right) + \left(1-\Phi \left(\frac{t-\mu_1}{\sigma_1}\right)\right)} $$</p>
+<p>Appropriate when thresholding log-odds form a logistic regression since they are norally distributed. Calculate AUC in a close-form rather than approximating them with the trapazoial method. Trapazoids give an exact answer for the given problem but calculating them using this generative method may generalize for easily.</p>
 
-<h1 id="measures">Measures</h1>
+<ul>
+<li>does it generalize?</li>
+</ul>
 
-<h2 id="intersection-of-sensitivity-and-specificity">Intersection of Sensitivity and Specificity</h2>
-
-<blockquote>
-<p>maximum for both</p>
-</blockquote>
-
-<h2 id="d-sensitivity-dt-0-and-d-specificity-dt-0">d(Sensitivity)/dt=0 and d(Specificity)/dt=0</h2>
-
-<blockquote>
-<p>maximum for each</p>
-</blockquote>
-
-<h2 id="difference-between-the-intersection-and-derivatives">Difference between the intersection and derivatives</h2>
-
-<blockquote>
-<p>difference in each maximum is the global performance</p>
-</blockquote>
-
-<h2 id="generative-auc-integral-of-fpr-tpr">Generative AUC (integral of FPR &amp; TPR)</h2>
+<h2 id="derivative-threshold-that-maximizes-both-sensitivity-and-specificity">Derivative: Threshold that maximizes both Sensitivity and Specificity</h2>
 
     </div>
   </div>
