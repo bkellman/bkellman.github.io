@@ -11,6 +11,28 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Essentiality, Synthesis, and Prediction in Glycobiology</title>
+      <link>https://bkellman.github.io/talk/advancement/</link>
+      <pubDate>Fri, 22 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bkellman.github.io/talk/advancement/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://drive.google.com/open?id=1hh3gzJrYDe5nGNe77LFf-_RUoj3OiLBE&#34; target=&#34;_blank&#34;&gt;Click here to see the full written proposal&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Exhaustive Modeling of Human Milk Oligosaccharide (HMO) Biosynthesis – Nathan Lewis, Lars Bode</title>
+      <link>https://bkellman.github.io/project/hmosyn/</link>
+      <pubDate>Fri, 22 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://bkellman.github.io/project/hmosyn/</guid>
+      <description>&lt;p&gt;[in prepreation]&lt;/p&gt;
+
+&lt;p&gt;Human Milk Oligosaccharides (HMOs) are abundant and functionally important components of human milk. A growing body of evidence suggests these glycans have major impacts on the health and development of the breastfed infant. Although they were discovered more than half a century ago, their biosynthesis in the human mammary gland remains minimally characterized. We propose to develop a framework for predicting which glycosyltransferases are involved in HMO biosynthesis and identify candidate structures for poorly characterized HMOs. Our approach constructs and selects candidate models describing HMO biosynthesis, leveraging both metabolic and transcriptomic modeling and data. We will construct a generic metabolic network describing all feasible biosynthetic pathways of 34 potential HMO structures related to the 16 most abundant (&amp;gt;97% by weight) oligosaccharides found in human milk. Through the integration of HMO glycoprofiling and transcriptomics, our mechanistic modeling approach endeavors to identify the most likely HMO structures for uncharacterized HMOs, as well as specifying the association between biosynthetic reactions for those HMOs, and candidate genes for elongation and branching. These results will provide the molecular basis for HMO biosynthesis and thus can be used to guide new strategies for HMO synthesis for academic and nutritional use.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>One Day in the Life of Ivan Denisovich; A Rough Allegory for Grad School</title>
       <link>https://bkellman.github.io/talk/bootcamptalk/</link>
       <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
@@ -72,13 +94,6 @@
 &lt;h2 id=&#34;join-aaas-today-https-www-aaas-org-membercentral-join-aaas&#34;&gt;&lt;a href=&#34;https://www.aaas.org/membercentral/join-aaas&#34; target=&#34;_blank&#34;&gt;Join AAAS Today&lt;/a&gt;&lt;/h2&gt;
 
 &lt;p&gt;We cannot effect change alone! My bike ride is not important, AAAS is. The more members they have, the louder and more unified our voice becomes.&lt;/p&gt;
-
-&lt;h2 id=&#34;unrelated-bike-stuff&#34;&gt;Unrelated Bike Stuff&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;2016 - California State Champion - Men&amp;rsquo;s Category 3, age 25-29&lt;/li&gt;
-&lt;li&gt;2017 - Kenda Cup Champion - Men&amp;rsquo;s Category 3, age 25-29&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
@@ -88,20 +103,10 @@
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://bkellman.github.io/project/nec-hmo/</guid>
-      <description>&lt;p&gt;A follow up on findings showing the mitigation of Necrotizing Enterocolitis (NEC) in a mouse model after administration of combined Human Milk Oligosaccharide (HMO) as well as a single HMO: DSLNT. We found that consecutive depletion of DSLNT in the mother’s milk was correlated with NEC onset in the infant. This finding is consistent with the pre-clinical rat model suggesting that DSLNT provides a significant protective effect for preterm infants from NEC.
+      <description>&lt;p&gt;&lt;a href=&#34;http://dx.doi.org/10.1136/gutjnl-2016-312819&#34; target=&#34;_blank&#34;&gt;published 2017&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;A follow up on findings showing the mitigation of Necrotizing Enterocolitis (NEC) in a mouse model after administration of combined Human Milk Oligosaccharide (HMO) as well as a single HMO: DSLNT. We found that consecutive depletion of DSLNT in the mother’s milk was correlated with NEC onset in the infant. This finding is consistent with the pre-clinical rat model suggesting that DSLNT provides a significant protective effect for preterm infants from NEC.
 The project will continue with the prediction of HMO biosynthesis pathways from gene expression data and the examination of microbiome contributions to NEC onset.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Transform Autism through Early Diagnosis - Nathan Lewis, Eric Couchesne</title>
-      <link>https://bkellman.github.io/project/blood-based-autism-diagnosis/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://bkellman.github.io/project/blood-based-autism-diagnosis/</guid>
-      <description>&lt;p&gt;In this project we are examining leukocyte RNAseq data collected from toddles evaluated at the Autism Center for Excellence.
-Subjects have had a comprehensive range of behavior phenotyping over the first several years of life.
-We hope to uncover the intrinsic dimensiality of the behavior-space defining Autism. We will create an informative diagnostic and prognostic tool for Autism by associating those composite behaviors with gene group regulation.&lt;/p&gt;
 </description>
     </item>
     

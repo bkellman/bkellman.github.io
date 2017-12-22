@@ -39,15 +39,6 @@
     </item>
     
     <item>
-      <title>Autism</title>
-      <link>https://bkellman.github.io/tags/autism/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://bkellman.github.io/tags/autism/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Betweensamplenormalization</title>
       <link>https://bkellman.github.io/tags/betweensamplenormalization/</link>
       <pubDate>Wed, 20 Apr 2016 12:00:00 +0000</pubDate>
@@ -95,7 +86,7 @@
     <item>
       <title>Gene Expression</title>
       <link>https://bkellman.github.io/tags/gene-expression/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 22 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://bkellman.github.io/tags/gene-expression/</guid>
       <description></description>
@@ -104,7 +95,7 @@
     <item>
       <title>Glycobiology</title>
       <link>https://bkellman.github.io/tags/glycobiology/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 22 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://bkellman.github.io/tags/glycobiology/</guid>
       <description></description>
@@ -113,7 +104,7 @@
     <item>
       <title>Human Milk Oligosaccharides</title>
       <link>https://bkellman.github.io/tags/human-milk-oligosaccharides/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 22 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://bkellman.github.io/tags/human-milk-oligosaccharides/</guid>
       <description></description>
@@ -122,7 +113,7 @@
     <item>
       <title>Metabolic Modeling</title>
       <link>https://bkellman.github.io/tags/metabolic-modeling/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 22 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://bkellman.github.io/tags/metabolic-modeling/</guid>
       <description></description>
@@ -143,6 +134,15 @@
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://bkellman.github.io/tags/normalization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rnaseq</title>
+      <link>https://bkellman.github.io/tags/rnaseq/</link>
+      <pubDate>Wed, 20 Apr 2016 12:00:00 +0000</pubDate>
+      
+      <guid>https://bkellman.github.io/tags/rnaseq/</guid>
       <description></description>
     </item>
     

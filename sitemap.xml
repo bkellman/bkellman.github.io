@@ -5,6 +5,24 @@
     
     <url>
     
+      <loc>https://bkellman.github.io/talk/advancement/</loc>
+      <lastmod>2017-12-22T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://bkellman.github.io/project/hmosyn/</loc>
+      <lastmod>2017-12-22T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://bkellman.github.io/talk/bootcamptalk/</loc>
       <lastmod>2017-09-19T00:00:00+00:00</lastmod>
     </url>
@@ -86,15 +104,6 @@
     
     <url>
     
-      <loc>https://bkellman.github.io/project/blood-based-autism-diagnosis/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>https://bkellman.github.io/post/performancerate/</loc>
       <lastmod>2016-04-20T12:00:00+00:00</lastmod>
     </url>
@@ -135,16 +144,6 @@
     
       <loc>https://bkellman.github.io/tags/auc/</loc>
       <lastmod>2016-04-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://bkellman.github.io/tags/autism/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -223,7 +222,7 @@
     <url>
     
       <loc>https://bkellman.github.io/tags/gene-expression/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <lastmod>2017-12-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -233,7 +232,7 @@
     <url>
     
       <loc>https://bkellman.github.io/tags/glycobiology/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <lastmod>2017-12-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -243,7 +242,7 @@
     <url>
     
       <loc>https://bkellman.github.io/tags/human-milk-oligosaccharides/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <lastmod>2017-12-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -253,7 +252,7 @@
     <url>
     
       <loc>https://bkellman.github.io/tags/metabolic-modeling/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <lastmod>2017-12-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -291,7 +290,7 @@
     <url>
     
       <loc>https://bkellman.github.io/project/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <lastmod>2017-12-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -302,16 +301,6 @@
     
       <loc>https://bkellman.github.io/publication_types/</loc>
       <lastmod>2017-04-07T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://bkellman.github.io/tags/rna-seq/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
