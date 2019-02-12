@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Ben Kellman</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://bkellman.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Content tagged as &#39;Academic&#39;</title>
@@ -16,8 +18,7 @@
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       
       <guid>https://bkellman.github.io/tags/academic/</guid>
-      <description>&lt;p&gt;Here is a list of all the content that has been tagged as &lt;em&gt;academic&lt;/em&gt;.&lt;/p&gt;
-</description>
+      <description>Here is a list of all the content that has been tagged as academic.</description>
     </item>
     
     <item>
@@ -26,24 +27,6 @@
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://bkellman.github.io/tags/advocacy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Auc</title>
-      <link>https://bkellman.github.io/tags/auc/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://bkellman.github.io/tags/auc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Betweensamplenormalization</title>
-      <link>https://bkellman.github.io/tags/betweensamplenormalization/</link>
-      <pubDate>Wed, 20 Apr 2016 12:00:00 +0000</pubDate>
-      
-      <guid>https://bkellman.github.io/tags/betweensamplenormalization/</guid>
       <description></description>
     </item>
     
@@ -57,29 +40,11 @@
     </item>
     
     <item>
-      <title>Bsn</title>
-      <link>https://bkellman.github.io/tags/bsn/</link>
-      <pubDate>Wed, 20 Apr 2016 12:00:00 +0000</pubDate>
-      
-      <guid>https://bkellman.github.io/tags/bsn/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Diagnosis</title>
       <link>https://bkellman.github.io/tags/diagnosis/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://bkellman.github.io/tags/diagnosis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fpkm</title>
-      <link>https://bkellman.github.io/tags/fpkm/</link>
-      <pubDate>Wed, 20 Apr 2016 12:00:00 +0000</pubDate>
-      
-      <guid>https://bkellman.github.io/tags/fpkm/</guid>
       <description></description>
     </item>
     
@@ -125,24 +90,6 @@
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://bkellman.github.io/tags/necrotizing-enterocolitis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Normalization</title>
-      <link>https://bkellman.github.io/tags/normalization/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://bkellman.github.io/tags/normalization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rnaseq</title>
-      <link>https://bkellman.github.io/tags/rnaseq/</link>
-      <pubDate>Wed, 20 Apr 2016 12:00:00 +0000</pubDate>
-      
-      <guid>https://bkellman.github.io/tags/rnaseq/</guid>
       <description></description>
     </item>
     

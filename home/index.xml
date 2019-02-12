@@ -8,7 +8,73 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Ben Kellman</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/home/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://bkellman.github.io/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://bkellman.github.io/home/about/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://bkellman.github.io/home/about/</guid>
+      <description>About Today, Ben is a Ph.D. student in Bioinformatics and Systems Biology at the University of California, San Diego working in the Lewis Lab for Systems Biology and Cell Engineering. He is published and working in the application of systems biological perspectives in glycobiology.
+His published work in Necrotizing Enterocolitis is the first study to reproduce preclinical protection of human milk sugars in humans. This work can hopefully be used to identify, prevent and treat this disease but also creates a new president to further examine human milk sugars, a clinically underappreciated biotherapeutic, as a new mode of clinical action.</description>
+    </item>
+    
+    <item>
+      <title>Recent Publications</title>
+      <link>https://bkellman.github.io/home/publications/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://bkellman.github.io/home/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://bkellman.github.io/home/talks/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://bkellman.github.io/home/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://bkellman.github.io/home/projects/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://bkellman.github.io/home/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>News</title>
+      <link>https://bkellman.github.io/home/news/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://bkellman.github.io/home/news/</guid>
+      <description> 2017, AAAS members stand up for science - Michaela Jarvis, Science 2017, UCSD Student Bikes From San Diego to San Francisco to Raise Money for Science - Cassia Pollock, NBC 2017, Bike for Science - Kenza Sidi-Ali-Cherif, AAAS  </description>
+    </item>
+    
+    <item>
+      <title>Fun</title>
+      <link>https://bkellman.github.io/home/fun/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://bkellman.github.io/home/fun/</guid>
+      <description>  Mountain Bike Racing  2017 Kenda Cup West Champion for cross-country mountain biking, category 3, men 25-29 2016 California State Champion for cross-country mountain biking, category 3, men 25-29   Coding  Double Tetris  </description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://bkellman.github.io/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://bkellman.github.io/home/contact/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

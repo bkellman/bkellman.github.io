@@ -1,14 +1,80 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ben Kellman on Ben Kellman</title>
+    <title>Ben Kellman</title>
     <link>https://bkellman.github.io/</link>
-    <description>Recent content in Ben Kellman on Ben Kellman</description>
+    <description>Recent content on Ben Kellman</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Ben Kellman</copyright>
     <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://bkellman.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://bkellman.github.io/home/about/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://bkellman.github.io/home/about/</guid>
+      <description>About Today, Ben is a Ph.D. student in Bioinformatics and Systems Biology at the University of California, San Diego working in the Lewis Lab for Systems Biology and Cell Engineering. He is published and working in the application of systems biological perspectives in glycobiology.
+His published work in Necrotizing Enterocolitis is the first study to reproduce preclinical protection of human milk sugars in humans. This work can hopefully be used to identify, prevent and treat this disease but also creates a new president to further examine human milk sugars, a clinically underappreciated biotherapeutic, as a new mode of clinical action.</description>
+    </item>
+    
+    <item>
+      <title>Recent Publications</title>
+      <link>https://bkellman.github.io/home/publications/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://bkellman.github.io/home/publications/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recent &amp; Upcoming Talks</title>
+      <link>https://bkellman.github.io/home/talks/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://bkellman.github.io/home/talks/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://bkellman.github.io/home/projects/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://bkellman.github.io/home/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>News</title>
+      <link>https://bkellman.github.io/home/news/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://bkellman.github.io/home/news/</guid>
+      <description> 2017, AAAS members stand up for science - Michaela Jarvis, Science 2017, UCSD Student Bikes From San Diego to San Francisco to Raise Money for Science - Cassia Pollock, NBC 2017, Bike for Science - Kenza Sidi-Ali-Cherif, AAAS  </description>
+    </item>
+    
+    <item>
+      <title>Fun</title>
+      <link>https://bkellman.github.io/home/fun/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://bkellman.github.io/home/fun/</guid>
+      <description>  Mountain Bike Racing  2017 Kenda Cup West Champion for cross-country mountain biking, category 3, men 25-29 2016 California State Champion for cross-country mountain biking, category 3, men 25-29   Coding  Double Tetris  </description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://bkellman.github.io/home/contact/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://bkellman.github.io/home/contact/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Human Milk Oligosaccharides, Infant Health and Maternal Blood Groups</title>
@@ -25,8 +91,7 @@
       <pubDate>Fri, 22 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://bkellman.github.io/talk/advancement/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://drive.google.com/open?id=1hh3gzJrYDe5nGNe77LFf-_RUoj3OiLBE&#34; target=&#34;_blank&#34;&gt;Click here to see the full written proposal&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Click here to see the full written proposal</description>
     </item>
     
     <item>
@@ -35,19 +100,8 @@
       <pubDate>Fri, 22 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://bkellman.github.io/project/hmosyn/</guid>
-      <description>&lt;p&gt;[in prepreation]&lt;/p&gt;
-
-&lt;p&gt;Human Milk Oligosaccharides (HMOs) are abundant and functionally important components of human milk. A growing body of evidence suggests these glycans have major impacts on the health and development of the breastfed infant. Although they were discovered more than half a century ago, their biosynthesis in the human mammary gland remains minimally characterized. We propose to develop a framework for predicting which glycosyltransferases are involved in HMO biosynthesis and identify candidate structures for poorly characterized HMOs. Our approach constructs and selects candidate models describing HMO biosynthesis, leveraging both metabolic and transcriptomic modeling and data. We will construct a generic metabolic network describing all feasible biosynthetic pathways of 34 potential HMO structures related to the 16 most abundant (&amp;gt;97% by weight) oligosaccharides found in human milk. Through the integration of HMO glycoprofiling and transcriptomics, our mechanistic modeling approach endeavors to identify the most likely HMO structures for uncharacterized HMOs, as well as specifying the association between biosynthetic reactions for those HMOs, and candidate genes for elongation and branching. These results will provide the molecular basis for HMO biosynthesis and thus can be used to guide new strategies for HMO synthesis for academic and nutritional use.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>One Day in the Life of Ivan Denisovich; A Rough Allegory for Grad School</title>
-      <link>https://bkellman.github.io/talk/bootcamptalk/</link>
-      <pubDate>Tue, 19 Sep 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://bkellman.github.io/talk/bootcamptalk/</guid>
-      <description></description>
+      <description>[in prepreation]
+Human Milk Oligosaccharides (HMOs) are abundant and functionally important components of human milk. A growing body of evidence suggests these glycans have major impacts on the health and development of the breastfed infant. Although they were discovered more than half a century ago, their biosynthesis in the human mammary gland remains minimally characterized. We propose to develop a framework for predicting which glycosyltransferases are involved in HMO biosynthesis and identify candidate structures for poorly characterized HMOs.</description>
     </item>
     
     <item>
@@ -74,36 +128,10 @@
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://bkellman.github.io/project/aaas-give-science-a-voice-ride/</guid>
-      <description>
-
-&lt;p&gt;A fundraiser for AAAS&amp;rsquo; office of government relations. AAAS is an foundational organization responsible for publishing the magazine Science. Importantly, they are in DC advocating for the funding and use of rigorously obtained information; they advocate for &amp;ldquo;evidence-based reasoning.&amp;rdquo;&lt;/p&gt;
-
-&lt;h2 id=&#34;social-media&#34;&gt;Social Media&lt;/h2&gt;
-
-&lt;p&gt;Follow us on our &lt;a href=&#34;https://www.facebook.com/AAAS-Give-Science-a-Voice-Ride-1842317252690197/&#34; target=&#34;_blank&#34;&gt;facebook page&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Follow us on twitter or instagram at &lt;a href=&#34;https://twitter.com/search?q=%23bike4science&amp;amp;src=typd&amp;amp;lang=en&#34; target=&#34;_blank&#34;&gt;#bike4science&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;considering-joining-the-next-ride-let-us-know-today-https-docs-google-com-forms-d-e-1faipqlsd2ijm4z0uonbro34sjr1x-kms2e5rpozl8ddst0-an1ygf4g-viewform-usp-sf-link&#34;&gt;Considering joining the next ride? &lt;a href=&#34;https://docs.google.com/forms/d/e/1FAIpQLSd2IJm4Z0uoNBRo34sJr1X_kMs2e5Rpozl8DDST0-aN1yGF4g/viewform?usp=sf_link&#34; target=&#34;_blank&#34;&gt;Let us know today&lt;/a&gt;&lt;/h2&gt;
-
-&lt;h2 id=&#34;why-raise-money-for-aaas&#34;&gt;Why raise money for AAAS&lt;/h2&gt;
-
-&lt;p&gt;Today, advocates need money to be heard by our representatives. To that end, I would like to raise some money for these scientific advocates, AAAS.&lt;/p&gt;
-
-&lt;p&gt;100% of donations will go directly to the AAAS Office of Government Relations. These are the folks responsible for interfacing with congress.&lt;/p&gt;
-
-&lt;h2 id=&#34;more-on-aaas&#34;&gt;More on AAAS&lt;/h2&gt;
-
-&lt;p&gt;Scientists need representation! Representation can pressure legislators to take climate change, research funding, knowledge, and academics seriously. AAAS is that organization.&lt;/p&gt;
-
-&lt;p&gt;I just joined the AAAS. If you take the opinion and work of academics seriously, join the AAAS today. Get academics the representation we need to be heard, pressure our representatives to rely on facts and reason in their decision making.&lt;/p&gt;
-
-&lt;p&gt;I would encourage everyone in and out of academia to join AAAS. Please encourage your friends and colleagues to do the same. #GiveKnowledgeAVoice&lt;/p&gt;
-
-&lt;h2 id=&#34;join-aaas-today-https-www-aaas-org-membercentral-join-aaas&#34;&gt;&lt;a href=&#34;https://www.aaas.org/membercentral/join-aaas&#34; target=&#34;_blank&#34;&gt;Join AAAS Today&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;We cannot effect change alone! My bike ride is not important, AAAS is. The more members they have, the louder and more unified our voice becomes.&lt;/p&gt;
-</description>
+      <description>A fundraiser for AAAS&amp;rsquo; office of government relations. AAAS is an foundational organization responsible for publishing the magazine Science. Importantly, they are in DC advocating for the funding and use of rigorously obtained information; they advocate for &amp;ldquo;evidence-based reasoning.&amp;rdquo;
+Social Media Follow us on our facebook page
+Follow us on twitter or instagram at #bike4science
+Considering joining the next ride? Let us know today Why raise money for AAAS Today, advocates need money to be heard by our representatives.</description>
     </item>
     
     <item>
@@ -112,239 +140,8 @@
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>https://bkellman.github.io/project/nec-hmo/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://dx.doi.org/10.1136/gutjnl-2016-312819&#34; target=&#34;_blank&#34;&gt;published 2017&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;A follow up on findings showing the mitigation of Necrotizing Enterocolitis (NEC) in a mouse model after administration of combined Human Milk Oligosaccharide (HMO) as well as a single HMO: DSLNT. We found that consecutive depletion of DSLNT in the mother’s milk was correlated with NEC onset in the infant. This finding is consistent with the pre-clinical rat model suggesting that DSLNT provides a significant protective effect for preterm infants from NEC.
-The project will continue with the prediction of HMO biosynthesis pathways from gene expression data and the examination of microbiome contributions to NEC onset.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Classification Performance: The rate of change of Sensitivity and Specificity</title>
-      <link>https://bkellman.github.io/post/performancerate/</link>
-      <pubDate>Wed, 20 Apr 2016 12:00:00 +0000</pubDate>
-      
-      <guid>https://bkellman.github.io/post/performancerate/</guid>
-      <description>
-
-&lt;h2 id=&#34;opinion-currently-under-construction-as-of-8-15-2016&#34;&gt;&lt;em&gt;opinion currently under-construction (as of 8/15/2016)&lt;/em&gt;&lt;/h2&gt;
-
-&lt;h2 id=&#34;if-you-have-something-to-add-please-shoot-me-an-email&#34;&gt;*if you have something to add, please shoot me an email!&lt;/h2&gt;
-
-&lt;h2 id=&#34;confusion-matrix&#34;&gt;Confusion matrix&lt;/h2&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;_&lt;/th&gt;
-&lt;th&gt;Disease&lt;/th&gt;
-&lt;th&gt;No Disease&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Test +&lt;/td&gt;
-&lt;td&gt;True Positive (TP)&lt;/td&gt;
-&lt;td&gt;False Positive (FP)&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Test -&lt;/td&gt;
-&lt;td&gt;False Negative (FN)&lt;/td&gt;
-&lt;td&gt;True Negative (TN)&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Recognition of &amp;ldquo;only&amp;rdquo; cases $$ Specificty = 1-FPR = TN/N = TN/(TN+FP) $$
-Recognition of &amp;ldquo;all&amp;rdquo; cases $$ Sensitivity = TP/P = TP/(TP+FN) $$&lt;/p&gt;
-
-&lt;h2 id=&#34;logistic-regression-and-log-odds&#34;&gt;Logistic Regression and log-odds&lt;/h2&gt;
-
-&lt;p&gt;Logistic Regression, developed in 1958 by David Cox, is a subdomain of regression modeling that parameterizes the relation between multiple independent observation variables and a binary dependent response variable. It was developed to calculate a probability of membership to either the &amp;ldquo;0&amp;rdquo; or &amp;ldquo;1&amp;rdquo; distribution.&lt;/p&gt;
-
-&lt;p&gt;The logistic regression is an adaptation of generialize linear modeling:
-$$ g(x) = \beta_0 + \beta_1 x $$
-where $g(x)$ is the logit function: $ ln \left( \frac{p}{1-p} \right) $.&lt;/p&gt;
-
-&lt;p&gt;We can describe the bimodal distribution of log-odds produced by a logistic regression  two normal distributions we would like to distish as $\mathcal{N}(\mu_0,\sigma_0^2)$ and $\mathcal{N}(\mu_1,\sigma_1^2)$. For a threshold, $t$,&lt;/p&gt;
-
-&lt;h2 id=&#34;updating-the-confusion-matrix-to-include-log-odds&#34;&gt;Updating the Confusion matrix to include log-odds&lt;/h2&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Confusion Matrix&lt;/th&gt;
-&lt;th&gt;Disease&lt;/th&gt;
-&lt;th&gt;No Disease&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Test +&lt;/td&gt;
-&lt;td&gt;$ TP = Pr( X &amp;gt; t | 1 ) $&lt;/td&gt;
-&lt;td&gt;$ FP = Pr( X &amp;gt; t | 0 ) $&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Test -&lt;/td&gt;
-&lt;td&gt;$ FN = Pr( X &amp;lt; t | 1 ) $&lt;/td&gt;
-&lt;td&gt;$ TN = Pr( X &amp;lt; t | 0 ) $&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Let&amp;rsquo;s expand $TP$ with the cumulative distribution function (CDF,$\Phi$):&lt;/p&gt;
-
-&lt;p&gt;$$TP = Pr(X&amp;gt;t|1) = 1-\Phi(z) = 1-\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{z} e^{\frac{-t^2}{2}} dt $$&lt;/p&gt;
-
-&lt;p&gt;$$TP  = 1-\Phi \left(\frac{t-\mu_1}{\sigma_1}\right) $$&lt;/p&gt;
-
-&lt;p&gt;$$TP =  1-\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{ \left(\frac{t-\mu_1}{\sigma_1}\right) } e^{\frac{-t^2}{2}} dt $$&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Confusion Matrix&lt;/th&gt;
-&lt;th&gt;Disease&lt;/th&gt;
-&lt;th&gt;No Disease&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;Test +&lt;/td&gt;
-&lt;td&gt;$ Sensitivity=1-\Phi \left(\frac{t-\mu_1}{\sigma_1}\right) $&lt;/td&gt;
-&lt;td&gt;$ FPR=1-\Phi \left(\frac{t-\mu_0}{\sigma_0}\right) $&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;Test -&lt;/td&gt;
-&lt;td&gt;$ FNR=\Phi \left(\frac{t-\mu_1}{\sigma_1}\right) $&lt;/td&gt;
-&lt;td&gt;$ Specificity=\Phi \left(\frac{t-\mu_0}{\sigma_0}\right) $&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h1 id=&#34;integral-and-derivative-of-the-sensitivity-specificity-product&#34;&gt;Integral and Derivative of the sensitivity specificity product&lt;/h1&gt;
-
-&lt;h2 id=&#34;integral-generative-auc&#34;&gt;Integral: Generative AUC&lt;/h2&gt;
-
-&lt;p&gt;Appropriate when thresholding log-odds form a logistic regression since they are norally distributed. Calculate AUC in a close-form rather than approximating them with the trapazoial method. Trapazoids give an exact answer for the given problem but calculating them using this generative method may generalize for easily.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;does it generalize?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;derivative-threshold-that-maximizes-both-sensitivity-and-specificity&#34;&gt;Derivative: Threshold that maximizes both Sensitivity and Specificity&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Examining the basis for between sample normalization</title>
-      <link>https://bkellman.github.io/post/betweensamplenormalization/</link>
-      <pubDate>Wed, 20 Apr 2016 12:00:00 +0000</pubDate>
-      
-      <guid>https://bkellman.github.io/post/betweensamplenormalization/</guid>
-      <description>
-
-&lt;h2 id=&#34;opinion-currently-under-review-as-of-8-7-2016&#34;&gt;&lt;em&gt;opinion currently under-review (as of 8/7/2016)&lt;/em&gt;&lt;/h2&gt;
-
-&lt;p&gt;Written by &lt;em&gt;Ben Kellman&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;A friend pointed out to me recently that I should not be using FPKM for between sample comparisons and sent me &lt;a href=&#34;https://haroldpimentel.wordpress.com/2014/12/08/in-rna-seq-2-2-between-sample-normalization/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;this blog post&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h1 id=&#34;the-example-that-caught-my-attention&#34;&gt;The example that caught my attention&lt;/h1&gt;
-
-&lt;p&gt;The example in the blogpost sparked my interest. This prompted me to play a bit with the numbers and examine the robustness of library-size normalization given various challenges.&lt;/p&gt;
-
-&lt;p&gt;As illustrated in the blogpost, library normalized counts breaks down at 5 genes when 1 has a 20-fold increase in differential expression. That breakdown is indicated by the differential expression induced in all the other, stabely expressed, genes. For any stably expressed gene, we would expect the differential expression between the control and experimental condition to be nominal: $E[FC_{stable}]=1$. We can denote library normalized counts for gene $i$ in the control condition as $C_i$ and library normalized counts for gene $i$ in the experimental condition as $C_i&amp;rsquo;$. Counts for stable, $s$, genes will be expected to remain constant across conditions: $E[FC_s] = C_s&amp;rsquo;/C_s = 1$. While counts for differentially expressed (&amp;ldquo;funky&amp;rdquo;) genes will expect to diverge across conditions: $E[FC_f]= C_f&amp;rsquo;/C_f \not= 1$. Let&amp;rsquo;s begin with the assumption that $E[FC_s] = 1$.&lt;/p&gt;
-
-&lt;p&gt;$$E[FC_s] =  C_s&amp;rsquo;/C_s = 1$$&lt;/p&gt;
-
-&lt;p&gt;We know that given raw counts, $R$, and a library of counts from $G$ genes,
-$$C_s =  \frac{\text{stable gene $i$ counts}}{ \text{total counts}} = \frac{R_s}{ \sum_G R_i}$$&lt;/p&gt;
-
-&lt;p&gt;We can now ask if $E[FC_s] = C_s&amp;rsquo;/C_s = 1$ as expected in the given example in the blogpost.&lt;/p&gt;
-
-&lt;p&gt;$$ FC_s = \frac{C_s&amp;rsquo;}{C_s} = \frac{ \frac{R_s&amp;rsquo;}{ \sum_G R_i&amp;rsquo;}} {\frac{R_s}{ \sum_G R_i} } =
-\frac{ \frac{2}{ 10}} {\frac{6}{100} } = 3.\overline{3} \not=1
- $$&lt;/p&gt;
-
-&lt;p&gt;Clearly, in the given example, $FC_s\not=1$, indicating that the stable genes are erroneously differentially expressed. It is at this point, I noted some curious properties of this example including: &lt;strong&gt;(1)&lt;/strong&gt; the extreme of the average fold-change of the differentially expressed gene ($\bar{FC_f}=20$), &lt;strong&gt;(2)&lt;/strong&gt; the 10-fold difference in library size, and &lt;strong&gt;(3)&lt;/strong&gt; that 25% of the genes were differentially expressed. &lt;strong&gt;Of course, this was just an example, but I was curious, which if any of these factors were important to the performance of library-size normalization.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;a-little-generalization-to-get-us-going&#34;&gt;A little generalization to get us going&lt;/h2&gt;
-
-&lt;p&gt;Total counts, $\sum_G R_i$, can be expanded to seperate differentially expressed, $F$, and stable, $S$, genes by multiplying the expected counts by the number of differentially expressed and stable genes, $G_f$ and $G_s$ respectively.&lt;/p&gt;
-
-&lt;p&gt;$$C_s = \frac{R_s}{ \sum_G R_i} = \frac{R_s}{ E[R_s]G_s + E[R_f]G_f}$$&lt;/p&gt;
-
-&lt;p&gt;**This generalization allows us to expand and reorganize our understanding of influences over the expected fold change for stable genes, $E[FC_s]$.$$ We can rewrite $E[FC_s]$ in terms of raw counts and gene number:&lt;/p&gt;
-
-&lt;p&gt;$$E[FC_s] = C_s&amp;rsquo;/C_s = 1$$
-$$E[FC_s] = \frac{\frac{R_s&amp;rsquo;}{ \sum_G R_i&amp;rsquo;}}{\frac{R_s}{ \sum_G R_i}} =
-\frac{R_s&amp;rsquo;/ (E[R_s&amp;rsquo;]G_s + E[R_f&amp;rsquo;]G_f)}{R_s/ (E[R_s]G_s + E[R_f]G_f)} = 1$$&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;In the control condition we can assume that $E[R_s]=E[R_f]$.&lt;/strong&gt; This may sound odd but in the control condition, the cell has not been aggitated in any mannor that would distinguish stable genes for the genes that will be differentially expressed. Therefore, the genes that will be differentially expressed should be indistinguishable from those that wont be differetially expressed. Therefore:&lt;/p&gt;
-
-&lt;p&gt;$$E[FC_s] = \frac{R_s&amp;rsquo;/ (E[R_s&amp;rsquo;]G_s + E[R_f&amp;rsquo;]G_f)}{R_s/ (E[R_s]G_s + E[R_f]G_f)} $$
-$$ = \frac{R_s&amp;rsquo;/ (E[R_s&amp;rsquo;]G_s + E[R_f&amp;rsquo;]G_f)}{R_s/ (E[R_s]G_s + E[R_s]G_f)} $$
-$$ = \frac{R_s&amp;rsquo;/ (E[R_s&amp;rsquo;]G_s + E[R_f&amp;rsquo;]G_f)}{1/ (G_s + G_f)} $$
-$$ = \frac{R_s&amp;rsquo;(G_s + G_f)}{ (E[R_s&amp;rsquo;]G_s + E[R_f&amp;rsquo;]G_f)} $$&lt;/p&gt;
-
-&lt;p&gt;We can further generalize the expected expression of the differentially expressed genes, $E[R_f&amp;rsquo;]$, by describing them as a scaling on the base expression, $E[F_f]$. Since the base expression is a raw measurement in a different sized library, this is not an ideal comparison. We recall from earlier that $E[R_s]=E[R_f]$ in the unperturbed condition. **To further this generalization, we extend the equation $E[R_s]=E[R_f]$ to account for divergence by some fold-change, $f$, from the average base expression in the experimental condition:
-$$ E[R_f&amp;rsquo;] = f(E[R_s&amp;rsquo;]) $$&lt;/p&gt;
-
-&lt;p&gt;This equation allows us to further simplify our expression for $E[FC_s]$:
-$$E[FC_s] = \frac{R_s&amp;rsquo;(G_s + G_f)}{ (E[R_s&amp;rsquo;]G_s + E[R_f&amp;rsquo;]G_f)} $$
-$$E[FC_s] = \frac{R_s&amp;rsquo;(G_s + G_f)}{ (E[R_s&amp;rsquo;]G_s + f(E[R_s&amp;rsquo;])G_f)} $$
-$$E[FC_s] = \frac{(G_s + G_f)}{ (G_s + fG_f)} $$&lt;/p&gt;
-
-&lt;p&gt;$E[FC_s]$ is now in a more maliable form and we can begin to make some hypotheses reguarding when library-size normalization may fail.&lt;/p&gt;
-
-&lt;h1 id=&#34;stuff-i-think&#34;&gt;Stuff I think:&lt;/h1&gt;
-
-&lt;h2 id=&#34;1-influence-of-average-fold-change-of-differentially-expressed-genes&#34;&gt;(1) Influence of average fold-change of differentially expressed genes&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;$E[FC_s]$ is inversely proportional to $f$.&lt;/li&gt;
-&lt;li&gt;But $E[f]=0$ [cite or explain]. therefore, in a well designed typical experiment there is no influence&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;$$E[FC_s] = \frac{(G_s + G_f)}{ (G_s + fG_f)} $$
-$$ = \frac{(G_s + G_f)}{ (G_s + (1)G_f)} $$
-$$ = \frac{(G_s + G_f)}{ (G_s + G_f)} = 1 $$&lt;/p&gt;
-
-&lt;h2 id=&#34;2-influence-of-average-library-size-difference&#34;&gt;(2) Influence of average library-size difference&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;No terms indicating the library size survive to this description of the E[FC_s] therefore, following the assumptions noted above, we expect no influence of library-size on E[FC_s] in library-size normalized samples.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;3-influence-of-the-proportion-of-differentially-expressed-genes&#34;&gt;(3) Influence of the proportion of differentially expressed genes&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The potential influence of $f$ noted in section (1), is scaled by the magnitude of $G_f$. When $G_f$ is small relative to $G_s$, the potential influcence of a non-zero $f$ will be mitigated.&lt;/li&gt;
-&lt;li&gt;It is typically the case that $G_f&amp;lt;&amp;lt;G_s$ since, typically, the cell is not completely transformed. In a carefully controlled experiment when only a portion of a response network is differentially expressed, truly differentially expressed genes can be on the order of 10. While interfering with global regulators like p300 could result in thousands of differentially expressed genes.&lt;/li&gt;
-&lt;li&gt;In an experiment where $E[f]\not=0$, it is important that $G_f&amp;lt;&amp;lt;G_s$, otherwise they will compound to induce differential expression in stable genes.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h1&gt;
-
-&lt;p&gt;If $E[f]\not=0$ and the number of differentially expressed gens is not small, library-size normalization is not reliable and will induce differential expression in stable genes.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;concerns&#34;&gt;Concerns&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Is $x/E[x] = 1$? If I&amp;rsquo;m looking at E[FC] should I be using R or E[R] in the numerator?&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>published 2017
+A follow up on findings showing the mitigation of Necrotizing Enterocolitis (NEC) in a mouse model after administration of combined Human Milk Oligosaccharide (HMO) as well as a single HMO: DSLNT. We found that consecutive depletion of DSLNT in the mother’s milk was correlated with NEC onset in the infant. This finding is consistent with the pre-clinical rat model suggesting that DSLNT provides a significant protective effect for preterm infants from NEC.</description>
     </item>
     
     <item>
@@ -353,8 +150,7 @@ $$ = \frac{(G_s + G_f)}{ (G_s + G_f)} = 1 $$&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://bkellman.github.io/talk/pediatricsystemsmedicine/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://docs.google.com/document/d/1OIq9gKWtqZuT8GD8ZJfQ37k7SbTq7zIDr1a6E4r7Pis/edit?usp=sharing&#34; target=&#34;_blank&#34;&gt;Click here to see the full written proposal&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Click here to see the full written proposal</description>
     </item>
     
   </channel>
